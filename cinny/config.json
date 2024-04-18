@@ -1,0 +1,13 @@
+{
+    "defaultHomeserver": 0,
+    "homeserverList": [
+      "example.com",
+      "matrix.org"
+    ],
+    "allowCustomHomeservers": true,
+  
+    "hashRouter": {
+      "enabled": false,
+      "basename": "/"
+    }
+}

@@ -1,0 +1,16 @@
+{
+	email email@example.com # Change this to your email address, used for Let'sEncrypt
+}
+matrix.example.com {
+	reverse_proxy /_matrix/* conduit:8448
+}
+cinny.example.com {
+	reverse_proxy cinny:80
+	header {
+		Permissions-Policy interest-cohort=()
+		Strict-Transport-Security max-age=31536000;
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		Referrer-Policy no-referrer-when-downgrade
+	}
+}
